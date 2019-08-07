@@ -2,10 +2,10 @@ language: python
 python:
   - "3.6"
 script:
-  - nosetests --with-coverage
+  - coverage run test_roman_numbers.py
 
 install:
-  - pip install coveralls
+  - pip install -r requeriments.txt
 
 after_success:
   - coveralls
